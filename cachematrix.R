@@ -21,10 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
     getmean <- function() cache
     list(set = set, get = get,
          setmean = setmean,
-         getmean = getmean)
-    
+         getmean = getmean)    
 }
-
 
 ## The cacheSolve function utalizes the chached
 ## mean computations calculated by the makeCacheMatrix
@@ -47,6 +45,3 @@ cacheSolve <- function(x, ...) {
     mymatrix$setmean(cache)
     return(mymatrix)
 }
-
-
-
